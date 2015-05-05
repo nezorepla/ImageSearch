@@ -64,7 +64,7 @@ public class SearchEngine
         if (rs.ResimOkuYol(YOL) == "1")
         {
 
-            rs.Kucult(500);
+            rs.Kucult(300);
 
 
             string session = DateTime.Now.Ticks.ToString().Substring(5);
@@ -159,6 +159,7 @@ public class SearchEngine
                 RenkOrtalamaK(5, w0, w1, h0, h1, names, session);
 
             }
+            rs.ResimKaydet(names);
         }
     }
 
@@ -336,7 +337,7 @@ public class SearchEngine
             //rs.Yedek = new Bitmap(orjinalFoto); ;
             rs.ResimOku(fu);
         }
-        rs.Kucult(50);
+        rs.Kucult(300);
 
 
         string session = DateTime.Now.Ticks.ToString().Substring(5);

@@ -102,8 +102,9 @@ public partial class _Default : System.Web.UI.Page
 
 
                 se.ResimOkuYol(YOL, names);
+                
                 System.Threading.Thread.Sleep(1000);
-
+                //ResimOkuYol içinde kayıt yapılıyor
                 //try
                 //{
                 //    query = "insert into Rsm_Tbl_Eq(S,O,A,R,G,B,K,PX,NAME) VALUES(1,"
@@ -117,10 +118,11 @@ public partial class _Default : System.Web.UI.Page
                 //        + ",'" + names + "')";
 
                 //    PCL.MsSQL_DBOperations.ExecuteSQLStr(query, "rs");
+                
                 //}
                 //catch (Exception t)
                 //{
-                //    sonuc = "hata aldı " + t.ToString();
+                //    sonuc = "error " + t.ToString();
                 //}
             }
         }

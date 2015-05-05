@@ -101,12 +101,12 @@ namespace Resim
         }
         public void ResimKaydet()
         {
-            SourceImage.Save(HttpContext.Current.Server.MapPath("~/images/" + DateTime.Now.Ticks.ToString().Substring(5) + ".jpg"));
+            SourceImage.Save(HttpContext.Current.Server.MapPath("~/images/eq_list/" + DateTime.Now.Ticks.ToString().Substring(5) + ".jpg"));
             SourceImage = new Bitmap(Yedek);
         }
         public void ResimKaydet(string name)
         {
-            SourceImage.Save(HttpContext.Current.Server.MapPath("~/images/" + name + ".jpg"));
+            SourceImage.Save(HttpContext.Current.Server.MapPath("~/images/eq_list/" + name + ".jpg"));
             SourceImage = new Bitmap(Yedek);
         }
         public void Kucult(int boyut)
@@ -143,7 +143,7 @@ namespace Resim
                         grafik.DrawString("alper", yazi, br, nokta1);
             */
             //Bu kısımdaki kodlarla resmin üzerine Beyaz bir şekilde Kutlaybto.biz yazdırdık.
-            //islenmisFotograf.Save(HttpContext.Current.Server.MapPath("~/images/" + imagename + ".jpg"), codec, eParams);
+        //     islenmisFotograf.Save(HttpContext.Current.Server.MapPath("~/images/eq_list/" + imagename + ".jpg"), codec, eParams);
             sourceImage = islenmisFotograf;
             //Son olarak resmimizi resimler klasörüne kaydettik.
             Yedek = islenmisFotograf;
